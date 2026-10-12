@@ -116,51 +116,51 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 ### ETH Robotics Systems Lab (RSL)
 
 #### Learning Agile and Dynamic Motor Skills for Legged Robots (Science Robotics 2019)
-- Original PDF: https://arxiv.org/pdf/1901.08652.pdf- Notes: A foundational work for RL-based quadruped locomotion. It trains a motor network model from real data and uses it for sim compensation while training the policy with RL + dynamics randomization. The policy was deployed on ANYmal, demonstrating robust locomotion behaviors (speed tracking, recovery after falls, etc.).
+- Original PDF: [Original source](https://arxiv.org/pdf/1901.08652.pdf) - Notes: A foundational work for RL-based quadruped locomotion. It trains a motor network model from real data and uses it for sim compensation while training the policy with RL + dynamics randomization. The policy was deployed on ANYmal, demonstrating robust locomotion behaviors (speed tracking, recovery after falls, etc.).
 
 #### Learning Quadrupedal Locomotion over Challenging Terrain (Science Robotics 2020)
-- Original PDF: https://arxiv.org/pdf/2010.11251.pdf- Notes: Introduces a two-stage teacher–student framework. The teacher learns with privileged (“cheating”) simulator information; the student (deployable with only history of observable signals) is distilled via online imitation learning (DAgger), using an encoder to infer the implicit privileged information. Also proposes terrain curriculum learning for robust traversal of continuous rough terrains. At this time, the overall control stack is still relatively complex: the network assists with foot trajectory generation and still relies on IK to obtain target joints (vs. many later works that directly output target joint commands).
+- Original PDF: [Original source](https://arxiv.org/pdf/2010.11251.pdf) - Notes: Introduces a two-stage teacher–student framework. The teacher learns with privileged (“cheating”) simulator information; the student (deployable with only history of observable signals) is distilled via online imitation learning (DAgger), using an encoder to infer the implicit privileged information. Also proposes terrain curriculum learning for robust traversal of continuous rough terrains. At this time, the overall control stack is still relatively complex: the network assists with foot trajectory generation and still relies on IK to obtain target joints (vs. many later works that directly output target joint commands).
 
 #### Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning (CoRL 2021)
-- Original PDF: https://arxiv.org/pdf/2109.11978- Notes: A milestone that accelerated RL-for-robots research. It demonstrates massively parallel training (Isaac Gym) + domain randomization for locomotion, and open-sources the `legged_gym` project.
+- Original PDF: [Original source](https://arxiv.org/pdf/2109.11978) - Notes: A milestone that accelerated RL-for-robots research. It demonstrates massively parallel training (Isaac Gym) + domain randomization for locomotion, and open-sources the `legged_gym` project.
 
 #### Learning robust perceptive locomotion for quadrupedal robots in the wild (Science Robotics 2022)
-- Original PDF: https://arxiv.org/pdf/2201.08117- Notes: Integrates proprioception with exteroceptive vision for robust locomotion, enabling large-scale outdoor walking in challenging conditions (stairs, tunnels, snow, fog, forests, loose rocks, etc.). A good example of learning a locomotion policy that estimates terrain elevation information.
+- Original PDF: [Original source](https://arxiv.org/pdf/2201.08117) - Notes: Integrates proprioception with exteroceptive vision for robust locomotion, enabling large-scale outdoor walking in challenging conditions (stairs, tunnels, snow, fog, forests, loose rocks, etc.). A good example of learning a locomotion policy that estimates terrain elevation information.
 
 #### Elevation Mapping for Locomotion and Navigation using GPU (IROS 2022)
-- Original PDF: https://arxiv.org/pdf/2204.12876- Notes: Proposes an efficient GPU pipeline for building local elevation maps from point clouds and robot pose. In complex environments, odometry drift remains one of the biggest challenges for real-time mapping. Code is open-sourced.
+- Original PDF: [Original source](https://arxiv.org/pdf/2204.12876) - Notes: Proposes an efficient GPU pipeline for building local elevation maps from point clouds and robot pose. In complex environments, odometry drift remains one of the biggest challenges for real-time mapping. Code is open-sourced.
 
 #### Advanced Skills through Multiple Adversarial Motion Priors in Reinforcement Learning (ICRA 2023)
-- Original PDF: https://arxiv.org/pdf/2203.14912- Notes: An enhanced AMP setup that supports multiple discrete styles with switching, demonstrated on a wheeled-legged robot (avoidance, walking, and style switching between quadruped and biped/standing modes). The “learn to get down to quadruped from a reverse-standing (biped) sequence” case is particularly interesting.
+- Original PDF: [Original source](https://arxiv.org/pdf/2203.14912) - Notes: An enhanced AMP setup that supports multiple discrete styles with switching, demonstrated on a wheeled-legged robot (avoidance, walking, and style switching between quadruped and biped/standing modes). The “learn to get down to quadruped from a reverse-standing (biped) sequence” case is particularly interesting.
 
 #### Curiosity-Driven Learning of Joint Locomotion and Manipulation Tasks (CoRL 2023)
 - PDF: No open-access PDF was fetched automatically (likely on OpenReview and/or the authors’ website).
 - Notes: Key highlight: learns loco-manipulation behaviors on a wheeled-legged robot, using legs as manipulators.
 
 #### Learning Agile Locomotion on Risky Terrains (IROS 2024)
-- Original PDF: https://arxiv.org/pdf/2311.10484.pdf- Notes: An interesting RL locomotion work on discrete “risky” terrains (not omnidirectional walking), with strong demos.
+- Original PDF: [Original source](https://arxiv.org/pdf/2311.10484.pdf) - Notes: An interesting RL locomotion work on discrete “risky” terrains (not omnidirectional walking), with strong demos.
 
 #### ANYmal Parkour: Learning Agile Navigation for Quadrupedal Robots (Science Robotics 2024)
-- Original PDF: https://arxiv.org/pdf/2306.14874.pdf- Notes: A hierarchical framework with perception (environment reconstruction), navigation (driving skill selection), and motion modules (parkour primitives). One of the first works demonstrating dynamic quadruped parkour-style navigation.
+- Original PDF: [Original source](https://arxiv.org/pdf/2306.14874.pdf) - Notes: A hierarchical framework with perception (environment reconstruction), navigation (driving skill selection), and motion modules (parkour primitives). One of the first works demonstrating dynamic quadruped parkour-style navigation.
 
 #### DTC: Deep Tracking Control (Science Robotics 2024)
-- Original PDF: https://arxiv.org/pdf/2309.15462.pdf- Notes: Combines model-based and learning-based methods. The upper-level trajectory optimization (TO) layer optimizes body and foot trajectories in real time; a lower-level RL policy tightly tracks those trajectories, enabling precise motion over extreme terrains (stepping stones, trenches, rubble/ruins, etc.). Compared to setups that only do base-velocity tracking, this hierarchical design better leverages legged robots’ ability to choose footholds.
+- Original PDF: [Original source](https://arxiv.org/pdf/2309.15462.pdf) - Notes: Combines model-based and learning-based methods. The upper-level trajectory optimization (TO) layer optimizes body and foot trajectories in real time; a lower-level RL policy tightly tracks those trajectories, enabling precise motion over extreme terrains (stepping stones, trenches, rubble/ruins, etc.). Compared to setups that only do base-velocity tracking, this hierarchical design better leverages legged robots’ ability to choose footholds.
 
 <a id="kaist" name="kaist"></a>
 ### KAIST (Raibo / Unitree, etc.)
 
 #### Concurrent Training of a Control Policy and a State Estimator for Dynamic and Robust Legged Locomotion (RAL 2022)
-- Original PDF: https://arxiv.org/pdf/2202.05481.pdf- Notes: A one-stage asymmetric training setup (not teacher–student). The policy jointly trains a key-state estimator (linear velocity, foot height, contact probability) from history of observable signals, while the critic in simulation uses privileged ground-truth key states. Uses dynamics randomization + PPO and transfers to real robots for robust traversal over continuous rough terrains.
+- Original PDF: [Original source](https://arxiv.org/pdf/2202.05481.pdf) - Notes: A one-stage asymmetric training setup (not teacher–student). The policy jointly trains a key-state estimator (linear velocity, foot height, contact probability) from history of observable signals, while the critic in simulation uses privileged ground-truth key states. Uses dynamics randomization + PPO and transfers to real robots for robust traversal over continuous rough terrains.
 
 #### DreamWaQ: Learning Robust Quadrupedal Locomotion With Implicit Terrain Imagination via Deep Reinforcement Learning (ICRA 2023)
-- Original PDF: https://arxiv.org/pdf/2301.10602.pdf- Notes: An asymmetric RL structure where a state estimator infers velocity and implicit terrain latent variables `z` from observable signals (with a VAE-style formulation). Demonstrates robust long-range outdoor locomotion on Unitree A1 and highlights the power of asymmetric actor–critic training in complex environments.
+- Original PDF: [Original source](https://arxiv.org/pdf/2301.10602.pdf) - Notes: An asymmetric RL structure where a state estimator infers velocity and implicit terrain latent variables `z` from observable signals (with a VAE-style formulation). Demonstrates robust long-range outdoor locomotion on Unitree A1 and highlights the power of asymmetric actor–critic training in complex environments.
 
 #### Learning Quadrupedal Locomotion on Deformable Terrain (Science Robotics 2023)
 - PDF: No open-access PDF was fetched automatically (likely paywalled; try author preprint / arXiv version if available).
 - Notes: Modifies RaiSim’s contact dynamics to model granular media / deformable terrain, enabling agile and robust locomotion on soft terrains (e.g., sand, foam pads). Uses an asymmetric training framework, further supporting its effectiveness.
 
 #### A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards (ICRA 2025)
-- Original PDF: https://arxiv.org/pdf/2409.15780.pdf- Notes: Introduces relaxed logarithmic barrier functions to design soft-constraint style rewards that guide the robot toward preset motion characteristics (periodicity, joint-range constraints, etc.). Notably, it generates diverse bio-inspired gaits without explicit motion priors; the “human-like walking while standing” and gallop gaits are impressive.
+- Original PDF: [Original source](https://arxiv.org/pdf/2409.15780.pdf) - Notes: Introduces relaxed logarithmic barrier functions to design soft-constraint style rewards that guide the robot toward preset motion characteristics (periodicity, joint-range constraints, etc.). Notably, it generates diverse bio-inspired gaits without explicit motion priors; the “human-like walking while standing” and gallop gaits are impressive.
 
 <a id="other-works" name="other-works"></a>
 ### Other Key Works (Quadrupeds / Bipeds / General)
@@ -168,120 +168,120 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 #### Quadrupeds / Legged Locomotion
 
 ##### Sim-to-Real: Learning Agile Locomotion for Quadruped Robots (Minitaur)
-- Original PDF: https://arxiv.org/pdf/1804.10332.pdf- Notes: An early sim-to-real quadruped RL work (Ghost Robotics Minitaur). Uses RL + an analytical motor model + dynamics randomization to address the transfer gap, inspiring later ANYmal-style pipelines.
+- Original PDF: [Original source](https://arxiv.org/pdf/1804.10332.pdf) - Notes: An early sim-to-real quadruped RL work (Ghost Robotics Minitaur). Uses RL + an analytical motor model + dynamics randomization to address the transfer gap, inspiring later ANYmal-style pipelines.
 
 ##### Learning Agile Robotic Locomotion Skills by Imitating Animals (RSS 2020)
-- Original PDF: https://arxiv.org/pdf/2004.00784.pdf- Notes: Learns natural animal-style locomotion via motion retargeting + DeepMimic-style motion tracking, demonstrated on early Unitree platforms (e.g., Laikago). Code is open-sourced (UCB).
+- Original PDF: [Original source](https://arxiv.org/pdf/2004.00784.pdf) - Notes: Learns natural animal-style locomotion via motion retargeting + DeepMimic-style motion tracking, demonstrated on early Unitree platforms (e.g., Laikago). Code is open-sourced (UCB).
 
 ##### RMA: Rapid Motor Adaptation for Legged Robots (RSS 2021)
-- Original PDF: https://arxiv.org/pdf/2107.04034.pdf- Notes: Teacher–student with an adaptation module (similar in spirit to ETH’s encoder). Uses random terrain sampling + domain randomization + parallel training in RaiSim, achieving robust continuous-terrain traversal on Unitree A1 without exteroception. Code is open-sourced (CMU).
+- Original PDF: [Original source](https://arxiv.org/pdf/2107.04034.pdf) - Notes: Teacher–student with an adaptation module (similar in spirit to ETH’s encoder). Uses random terrain sampling + domain randomization + parallel training in RaiSim, achieving robust continuous-terrain traversal on Unitree A1 without exteroception. Code is open-sourced (CMU).
 
 ##### Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior (CoRL 2022)
-- Original PDF: https://arxiv.org/pdf/2212.03238.pdf- Notes: A highly tunable and robust locomotion policy on Unitree Go1 with fine-grained controllable parameters: speed, gait (pronking/trotting/bounding/pacing/galloping), step frequency, base height, pitch, contact timing, foot clearance, etc. Code is open-sourced (MIT).
+- Original PDF: [Original source](https://arxiv.org/pdf/2212.03238.pdf) - Notes: A highly tunable and robust locomotion policy on Unitree Go1 with fine-grained controllable parameters: speed, gait (pronking/trotting/bounding/pacing/galloping), step frequency, base height, pitch, contact timing, foot clearance, etc. Code is open-sourced (MIT).
 
 ##### Rapid Locomotion via Reinforcement Learning (RSS 2022)
-- Original PDF: https://arxiv.org/pdf/2205.02824.pdf- Notes: Proposes a self-adaptive speed-grid curriculum that pushes the robot’s speed limits based on learned capability, minimizing hand-tuned curricula and expert intervention. Code is open-sourced (MIT).
+- Original PDF: [Original source](https://arxiv.org/pdf/2205.02824.pdf) - Notes: Proposes a self-adaptive speed-grid curriculum that pushes the robot’s speed limits based on learned capability, minimizing hand-tuned curricula and expert intervention. Code is open-sourced (MIT).
 
 ##### Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions (ICRA 2022)
-- Original PDF: https://arxiv.org/pdf/2203.15103.pdf- Notes: One of the first works applying AMP to quadrupeds: combining task reward with style reward can produce natural-looking behaviors without highly engineered reward terms. Code is open-sourced (UCB).
+- Original PDF: [Original source](https://arxiv.org/pdf/2203.15103.pdf) - Notes: One of the first works applying AMP to quadrupeds: combining task reward with style reward can produce natural-looking behaviors without highly engineered reward terms. Code is open-sourced (UCB).
 
 ##### Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion (CoRL 2022)
-- Original PDF: https://arxiv.org/pdf/2210.10044.pdf- Notes: Demonstrates arm–leg coordination on Unitree Go1 + a WidowX arm using RL for whole-body loco-manipulation (teleoperation data). Also proposes ROA to estimate environment latent variables online. Built on Isaac Gym + `rsl_rl`, and open-sourced (CMU).
+- Original PDF: [Original source](https://arxiv.org/pdf/2210.10044.pdf) - Notes: Demonstrates arm–leg coordination on Unitree Go1 + a WidowX arm using RL for whole-body loco-manipulation (teleoperation data). Also proposes ROA to estimate environment latent variables online. Built on Isaac Gym + `rsl_rl`, and open-sourced (CMU).
 
 ##### Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild (RAL 2023)
-- Original PDF: https://arxiv.org/pdf/2304.10888.pdf- Notes: Teacher–student + AMP enables robust continuous-terrain traversal on Unitree Go1 using only proprioception. Natural gait data is generated via trajectory optimization on flat ground. Note: the journal title is “Learning Robust and Agile Legged Locomotion Using Adversarial Motion Priors” (SJTU).
+- Original PDF: [Original source](https://arxiv.org/pdf/2304.10888.pdf) - Notes: Teacher–student + AMP enables robust continuous-terrain traversal on Unitree Go1 using only proprioception. Natural gait data is generated via trajectory optimization on flat ground. Note: the journal title is “Learning Robust and Agile Legged Locomotion Using Adversarial Motion Priors” (SJTU).
 
 ##### Lifelike Agility and Play on Quadrupedal Robots using Reinforcement Learning and Generative Pre-trained Models (Nature Machine Intelligence 2023)
-- Original PDF: https://arxiv.org/pdf/2308.15143.pdf- Notes: Uses generative models to pretrain on large-scale animal motion data, then reuses those skills during environment-level learning. A representative Robotics X (Tencent) work.
+- Original PDF: [Original source](https://arxiv.org/pdf/2308.15143.pdf) - Notes: Uses generative models to pretrain on large-scale animal motion data, then reuses those skills during environment-level learning. A representative Robotics X (Tencent) work.
 
 ##### Learning Agile Skills via Adversarial Imitation of Rough Partial Demonstrations
-- Original PDF: https://arxiv.org/pdf/2206.11693.pdf- Notes: Learns dynamic skills from rough/incomplete demonstrations collected via manual operation, including backflip-like behaviors on low-cost platforms.
+- Original PDF: [Original source](https://arxiv.org/pdf/2206.11693.pdf) - Notes: Learns dynamic skills from rough/incomplete demonstrations collected via manual operation, including backflip-like behaviors on low-cost platforms.
 
 ##### Extreme Parkour with Legged Robots (ICRA 2024)
-- Original PDF: https://arxiv.org/pdf/2309.14341.pdf- Notes: Pushes Unitree A1’s rough-terrain capabilities with domain randomization + exteroception; demonstrates box jumping, vaulting, squeezing through gaps, etc. (CMU/Stanford+ collaborators).
+- Original PDF: [Original source](https://arxiv.org/pdf/2309.14341.pdf) - Notes: Pushes Unitree A1’s rough-terrain capabilities with domain randomization + exteroception; demonstrates box jumping, vaulting, squeezing through gaps, etc. (CMU/Stanford+ collaborators).
 
 ##### Robot Parkour Learning (CoRL 2024)
-- Original PDF: https://arxiv.org/pdf/2309.05665.pdf- Notes: A concurrent line of work with similar goals: parkour-style locomotion with domain randomization + exteroception (CoRL 2024).
+- Original PDF: [Original source](https://arxiv.org/pdf/2309.05665.pdf) - Notes: A concurrent line of work with similar goals: parkour-style locomotion with domain randomization + exteroception (CoRL 2024).
 
 ##### Visual Whole-Body Control for Legged Loco-Manipulation (CoRL 2024)
-- Original PDF: https://arxiv.org/pdf/2403.16967.pdf- Notes: Demonstrates vision-driven hierarchical policies (imitation learning + RL) for mobile manipulation on Unitree B1 + Z1 arm via sim-to-real. Built on Isaac Gym + `rsl_rl`, and open-sourced (UCSD).
+- Original PDF: [Original source](https://arxiv.org/pdf/2403.16967.pdf) - Notes: Demonstrates vision-driven hierarchical policies (imitation learning + RL) for mobile manipulation on Unitree B1 + Z1 arm via sim-to-real. Built on Isaac Gym + `rsl_rl`, and open-sourced (UCSD).
 
 ##### PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots (RAL 2024)
-- Original PDF: https://arxiv.org/pdf/2408.13740.pdf- Notes: A “plus” version that further improves dynamic parkour performance and transfers to outdoor settings (ZJU).
+- Original PDF: [Original source](https://arxiv.org/pdf/2408.13740.pdf) - Notes: A “plus” version that further improves dynamic parkour performance and transfers to outdoor settings (ZJU).
 
 #### Bipeds / General
 
 ##### Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition (ICRA 2021)
-- Original PDF: https://arxiv.org/pdf/2011.01387.pdf- Notes: Defines common gaits (standing, walking, jumping, running, hopping) via probabilistic periodic reward composition and demonstrates on Cassie. Includes both single-gait policies and a gait-switching policy.
+- Original PDF: [Original source](https://arxiv.org/pdf/2011.01387.pdf) - Notes: Defines common gaits (standing, walking, jumping, running, hopping) via probabilistic periodic reward composition and demonstrates on Cassie. Includes both single-gait policies and a gait-switching policy.
 
 ##### AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control (SIGGRAPH 2021)
-- Original PDF: https://arxiv.org/pdf/2104.02180.pdf- Notes: Not a legged-robot paper, but highly transferable: uses a GAN-based implicit metric to provide style rewards for learning control policies (UCB).
+- Original PDF: [Original source](https://arxiv.org/pdf/2104.02180.pdf) - Notes: Not a legged-robot paper, but highly transferable: uses a GAN-based implicit metric to provide style rewards for learning control policies (UCB).
 
 <a id="humanoids" name="humanoids"></a>
 ### Humanoids (Whole-Body Control / Teleop / Getting-Up, etc.)
 
 #### Expressive Whole-Body Control for Humanoid Robots (RSS 2024)
-- Original PDF: https://arxiv.org/pdf/2402.16796.pdf- Notes: Learns humanoid motion sequences via motion retargeting (UCSD).
+- Original PDF: [Original source](https://arxiv.org/pdf/2402.16796.pdf) - Notes: Learns humanoid motion sequences via motion retargeting (UCSD).
 
 #### ExBody2: Advanced Expressive Humanoid Whole-Body Control (2024)
-- Original PDF: https://arxiv.org/pdf/2412.13196.pdf- Notes: A follow-up work to Expressive Whole-Body Control (2024).
+- Original PDF: [Original source](https://arxiv.org/pdf/2412.13196.pdf) - Notes: A follow-up work to Expressive Whole-Body Control (2024).
 
 #### Open-TeleVision: Teleoperation with Immersive Active Visual Feedback (CoRL 2024)
-- Original PDF: https://arxiv.org/pdf/2407.01512.pdf- Notes: An open-source VR teleoperation framework for humanoids (upper body only).
+- Original PDF: [Original source](https://arxiv.org/pdf/2407.01512.pdf) - Notes: An open-source VR teleoperation framework for humanoids (upper body only).
 
 #### Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control (2024)
-- Original PDF: https://arxiv.org/pdf/2412.07773.pdf- Notes: Demonstrates a whole-body control approach that extends Open-TeleVision, with a locomotion controller that leverages ideas related to ExBody (2024).
+- Original PDF: [Original source](https://arxiv.org/pdf/2412.07773.pdf) - Notes: Demonstrates a whole-body control approach that extends Open-TeleVision, with a locomotion controller that leverages ideas related to ExBody (2024).
 
 #### HOVER: Versatile Neural Whole-Body Controller for Humanoid Robots (ICRA 2025)
-- Original PDF: https://arxiv.org/pdf/2410.21229.pdf- Notes: Unifies several whole-body control target types (root velocity tracking, joint-angle tracking, key-point tracking, etc.) (CMU).
+- Original PDF: [Original source](https://arxiv.org/pdf/2410.21229.pdf) - Notes: Unifies several whole-body control target types (root velocity tracking, joint-angle tracking, key-point tracking, etc.) (CMU).
 
 #### HugWBC: A Unified and General Humanoid Whole-Body Controller for Fine-Grained Locomotion (2025)
-- Original PDF: https://arxiv.org/pdf/2502.03206- Notes: A “humanoid version” of Walk These Ways: fine-grained gait tuning over continuous terrains (gait type, step frequency, base height, pitch, contact timing, foot clearance, etc.). Notable for natural gaits induced by polynomial foot-trajectory rewards and extensibility via curricula that bring in upper-body freedom (SJTU / Shanghai AI Lab).
+- Original PDF: [Original source](https://arxiv.org/pdf/2502.03206) - Notes: A “humanoid version” of Walk These Ways: fine-grained gait tuning over continuous terrains (gait type, step frequency, base height, pitch, contact timing, foot clearance, etc.). Notable for natural gaits induced by polynomial foot-trajectory rewards and extensibility via curricula that bring in upper-body freedom (SJTU / Shanghai AI Lab).
 
 #### Learning Humanoid Standing-up Control across Diverse Postures (RSS 2025)
-- Original PDF: https://arxiv.org/pdf/2502.08378- Notes: Strong getting-up behaviors across diverse postures (Shanghai AI Lab).
+- Original PDF: [Original source](https://arxiv.org/pdf/2502.08378) - Notes: Strong getting-up behaviors across diverse postures (Shanghai AI Lab).
 
 #### Learning Getting-Up Policies for Real-World Humanoid Robots (RSS 2025)
-- Original PDF: https://arxiv.org/pdf/2502.12152- Notes: A concurrent getting-up policy work (UIUC).
+- Original PDF: [Original source](https://arxiv.org/pdf/2502.12152) - Notes: A concurrent getting-up policy work (UIUC).
 
 #### BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion (2025)
-- Original PDF: https://arxiv.org/pdf/2508.08241- Notes: High-quality motion tracking plus guided diffusion; supports test-time task-specific control using simple cost functions (Berkeley/Stanford).
+- Original PDF: [Original source](https://arxiv.org/pdf/2508.08241) - Notes: High-quality motion tracking plus guided diffusion; supports test-time task-specific control using simple cost functions (Berkeley/Stanford).
 
 #### Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain (arXiv 2026)
-- Original page: https://arxiv.org/abs/2608.16164- Notes: Generates trajectory-level curricula directly from unstructured terrain maps; an evaluator scores task difficulty and a sampler proposes tasks matched to policy capability.
+- Original page: [Original source](https://arxiv.org/abs/2608.16164) - Notes: Generates trajectory-level curricula directly from unstructured terrain maps; an evaluator scores task difficulty and a sampler proposes tasks matched to policy capability.
 
 #### TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion (arXiv 2026)
-- Original page: https://arxiv.org/abs/2603.14156- Notes: A Transformer teacher jointly schedules velocity, terrain, and domain-randomization curricula, validated on Unitree Go1 for fast locomotion and sim-to-real transfer.
+- Original page: [Original source](https://arxiv.org/abs/2603.14156) - Notes: A Transformer teacher jointly schedules velocity, terrain, and domain-randomization curricula, validated on Unitree Go1 for fast locomotion and sim-to-real transfer.
 
 #### Predictive Safety Curricula for Robust Legged Locomotion (arXiv 2026)
-- Original page: https://arxiv.org/abs/2609.37070- Notes: Uses a safety critic to predict future safety cost and prioritize rare failure cases; reduces shank collisions on platforms including ANYmal-D.
+- Original page: [Original source](https://arxiv.org/abs/2609.37070) - Notes: Uses a safety critic to predict future safety cost and prioritize rare failure cases; reduces shank collisions on platforms including ANYmal-D.
 
 #### Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots (arXiv 2026)
-- Original page: https://arxiv.org/abs/2609.39755- Notes: Continually learns terrain interaction and traversability from pre-contact vision and locomotion experience, using a validation gate for model updates.
+- Original page: [Original source](https://arxiv.org/abs/2609.39755) - Notes: Continually learns terrain interaction and traversability from pre-contact vision and locomotion experience, using a validation gate for model updates.
 
 #### Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion (arXiv 2026)
-- Original page: https://arxiv.org/abs/2606.00637- Notes: GLAD separates global terrain context from local foothold detail and enables perceptive locomotion on sparse footholds and obstacle-rich terrain with Unitree G1.
+- Original page: [Original source](https://arxiv.org/abs/2606.00637) - Notes: GLAD separates global terrain context from local foothold detail and enables perceptive locomotion on sparse footholds and obstacle-rich terrain with Unitree G1.
 
 #### Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space (arXiv 2026)
-- Original page: https://arxiv.org/abs/2608.19977- Notes: Combines animal-motion imitation, visual gate detection, and hierarchical skill selection for dynamic quadruped traversal through constrained spaces.
+- Original page: [Original source](https://arxiv.org/abs/2608.19977) - Notes: Combines animal-motion imitation, visual gate detection, and hierarchical skill selection for dynamic quadruped traversal through constrained spaces.
 
 #### Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (arXiv 2026)
-- Original page: https://arxiv.org/abs/2601.17428- Notes: LP-ACRL estimates learning progress online and adapts task sampling, enabling high-speed ANYmal D locomotion across varied rough terrains.
+- Original page: [Original source](https://arxiv.org/abs/2601.17428) - Notes: LP-ACRL estimates learning progress online and adapts task sampling, enabling high-speed ANYmal D locomotion across varied rough terrains.
 
 #### DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion (arXiv 2026)
-- Original page: https://arxiv.org/abs/2608.22033- Notes: Uses state-conditioned sampling and a fixed token set to reduce high-resolution terrain encoding cost, with sim-to-real validation for sparse-terrain quadruped locomotion.
+- Original page: [Original source](https://arxiv.org/abs/2608.22033) - Notes: Uses state-conditioned sampling and a fixed token set to reduce high-resolution terrain encoding cost, with sim-to-real validation for sparse-terrain quadruped locomotion.
 
 #### Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control (arXiv 2026)
-- Original page: https://arxiv.org/abs/2607.20110- Notes: Trains a general motion-tracking policy, then acquires highly dynamic humanoid skills such as backflips through difficulty-aware sampling and capability consolidation while limiting regression.
+- Original page: [Original source](https://arxiv.org/abs/2607.20110) - Notes: Trains a general motion-tracking policy, then acquires highly dynamic humanoid skills such as backflips through difficulty-aware sampling and capability consolidation while limiting regression.
 
 #### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (arXiv 2026)
-- Original page: https://arxiv.org/abs/2609.24840- Notes: Directly generates executable actions while predicting future states for text conditioning and test-time guidance; validated on a Unitree G1 humanoid.
+- Original page: [Original source](https://arxiv.org/abs/2609.24840) - Notes: Directly generates executable actions while predicting future states for text conditioning and test-time guidance; validated on a Unitree G1 humanoid.
 
 <a id="surveys" name="surveys"></a>
 ### Surveys
 
 #### Learning-based legged locomotion: State of the art and future perspectives (IJRR 2025)
-- Original PDF: https://arxiv.org/pdf/2406.01152.pdf- Notes: A survey of learning-based legged locomotion control, summarizing recent academic and industrial progress and outlining future directions (Georgia Tech).
+- Original PDF: [Original source](https://arxiv.org/pdf/2406.01152.pdf) - Notes: A survey of learning-based legged locomotion control, summarizing recent academic and industrial progress and outlining future directions (Georgia Tech).
 
 <a id="misc" name="misc"></a>
 ### Misc (no notes yet)
