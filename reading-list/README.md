@@ -49,6 +49,10 @@ python3 scripts/resolve_paper_links.py --update-index
 - DreamWaQ: Learning Robust Quadrupedal Locomotion With Implicit Terrain Imagination via Deep Reinforcement Learning（ICRA 2023）— [原文 PDF](https://arxiv.org/pdf/2301.10602.pdf)
 - Learning Quadrupedal Locomotion on Deformable Terrain（Science Robotics 2023）— [原文（期刊页）](https://doi.org/10.1126/scirobotics.ade2256)（暂无公开 PDF，可尝试作者预印本）
 - Rapid Locomotion via Reinforcement Learning（RSS 2022）— [原文 PDF](https://arxiv.org/pdf/2205.02824.pdf)
+- Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain（arXiv 2026）— [原文页面](https://arxiv.org/abs/2608.16164)
+- TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2603.14156)
+- Predictive Safety Curricula for Robust Legged Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.37070)
+- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning（arXiv 2026）— [原文页面](https://arxiv.org/abs/2601.17428)
 
 #### 双足
 - Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition（ICRA 2021）— [原文 PDF](https://arxiv.org/pdf/2011.01387.pdf)
@@ -60,6 +64,8 @@ python3 scripts/resolve_paper_links.py --update-index
 ### 感知 / 建图
 - Learning robust perceptive locomotion for quadrupedal robots in the wild（Science Robotics 2022）— [原文 PDF](https://arxiv.org/pdf/2201.08117)
 - Elevation Mapping for Locomotion and Navigation using GPU（IROS 2022）— [原文 PDF](https://arxiv.org/pdf/2204.12876)
+- Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.39755)
+- DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2608.22033)
 
 ### 运动先验 / 模仿学习 / 风格奖励 / 生成模型
 - Learning Agile Robotic Locomotion Skills by Imitating Animals（RSS 2020）— [原文 PDF](https://arxiv.org/pdf/2004.00784.pdf)
@@ -78,6 +84,7 @@ python3 scripts/resolve_paper_links.py --update-index
 - Extreme Parkour with Legged Robots（ICRA 2024）— [原文 PDF](https://arxiv.org/pdf/2309.14341.pdf)
 - Robot Parkour Learning（CoRL 2024）— [原文 PDF](https://arxiv.org/pdf/2309.05665.pdf)
 - PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots（RAL 2024）— [原文 PDF](https://arxiv.org/pdf/2408.13740.pdf)
+- Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space（arXiv 2026）— [原文页面](https://arxiv.org/abs/2608.19977)
 
 ### Loco-manipulation / Whole-body
 - Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion（CoRL 2022）— [原文 PDF](https://arxiv.org/pdf/2210.10044.pdf)
@@ -94,6 +101,9 @@ python3 scripts/resolve_paper_links.py --update-index
 - Learning Humanoid Standing-up Control across Diverse Postures（RSS 2025）— [原文 PDF](https://arxiv.org/pdf/2502.08378)
 - Learning Getting-Up Policies for Real-World Humanoid Robots（RSS 2025）— [原文 PDF](https://arxiv.org/pdf/2502.12152)
 - BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion（2025）— [原文 PDF](https://arxiv.org/pdf/2508.08241)
+- Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2606.00637)
+- Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control（arXiv 2026）— [原文页面](https://arxiv.org/abs/2607.20110)
+- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.24840)
 
 ### 硬件 / 机构
 - A Low Cost Modular Actuator for Dynamic Robots — [原文 PDF](https://dspace.mit.edu/handle/1721.1/118671)
@@ -237,6 +247,36 @@ python3 scripts/resolve_paper_links.py --update-index
 
 #### BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion（2025）
 - 原文 PDF： https://arxiv.org/pdf/2508.08241- 笔记：高质量 motion tracking + guided diffusion：测试时可用简单 cost functions 做 task-specific control（Berkeley/Stanford）。
+
+#### Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2608.16164- 笔记：直接从非结构化地形图生成轨迹级课程；评估器学习任务难度，采样器根据策略能力持续提出下一轮训练轨迹。
+
+#### TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2603.14156- 笔记：用 Transformer 教师联合调度速度、地形和域随机化三类课程，并在 Unitree Go1 上验证高速 locomotion 与 sim-to-real 转移。
+
+#### Predictive Safety Curricula for Robust Legged Locomotion（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2609.37070- 笔记：用安全 critic 预测未来安全代价，优先训练罕见失败场景；在 ANYmal-D 等平台上降低小腿碰撞。
+
+#### Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2609.39755- 笔记：从接触前视觉和运动经验持续学习地形交互与可通行性，并用验证门控制模型更新。
+
+#### Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2606.00637- 笔记：GLAD 将地形编码拆成全局环境理解和局部落足点细节，在 Unitree G1 上面向稀疏落足点与障碍地形实现感知运动。
+
+#### Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2608.19977- 笔记：分层策略结合动物动作模仿、视觉门检测和技能选择，实现四足机器人动态穿越狭窄通道。
+
+#### Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2601.17428- 笔记：LP-ACRL 在线估计学习进展并调整任务采样分布，使 ANYmal D 在多种粗糙地形上实现高速运动。
+
+#### DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2608.22033- 笔记：通过状态条件采样和固定数量的地形证据标记降低高分辨率地图编码成本，并在稀疏地形四足运动中验证 sim-to-real。
+
+#### Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2607.20110- 笔记：先训练通用运动跟踪策略，再通过难度感知采样和能力巩固学习后空翻等高动态人形技能，同时减少已掌握能力退化。
+
+#### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（arXiv 2026）
+- 原文页面： https://arxiv.org/abs/2609.24840- 笔记：动作扩散策略直接生成可执行动作，并预测未来状态轨迹以支持文本条件和测试时目标引导；在 Unitree G1 上完成实机验证。
 
 <a id="surveys" name="surveys"></a>
 ### 综述

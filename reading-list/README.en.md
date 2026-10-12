@@ -48,6 +48,10 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - DreamWaQ: Learning Robust Quadrupedal Locomotion With Implicit Terrain Imagination via Deep Reinforcement Learning (ICRA 2023) — [Original PDF](https://arxiv.org/pdf/2301.10602.pdf)
 - Learning Quadrupedal Locomotion on Deformable Terrain (Science Robotics 2023) — [Original (journal page)](https://doi.org/10.1126/scirobotics.ade2256) (no public PDF; try author preprint)
 - Rapid Locomotion via Reinforcement Learning (RSS 2022) — [Original PDF](https://arxiv.org/pdf/2205.02824.pdf)
+- Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain (arXiv 2026) — [Original page](https://arxiv.org/abs/2608.16164)
+- TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2603.14156)
+- Predictive Safety Curricula for Robust Legged Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.37070)
+- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (arXiv 2026) — [Original page](https://arxiv.org/abs/2601.17428)
 
 #### Bipeds
 - Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition (ICRA 2021) — [Original PDF](https://arxiv.org/pdf/2011.01387.pdf)
@@ -59,6 +63,8 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 ### Perception / Mapping
 - Learning robust perceptive locomotion for quadrupedal robots in the wild (Science Robotics 2022) — [Original PDF](https://arxiv.org/pdf/2201.08117)
 - Elevation Mapping for Locomotion and Navigation using GPU (IROS 2022) — [Original PDF](https://arxiv.org/pdf/2204.12876)
+- Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.39755)
+- DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2608.22033)
 
 ### Motion Priors / Imitation / Style / Foundation Models
 - Learning Agile Robotic Locomotion Skills by Imitating Animals (RSS 2020) — [Original PDF](https://arxiv.org/pdf/2004.00784.pdf)
@@ -77,6 +83,7 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - Extreme Parkour with Legged Robots (ICRA 2024) — [Original PDF](https://arxiv.org/pdf/2309.14341.pdf)
 - Robot Parkour Learning (CoRL 2024) — [Original PDF](https://arxiv.org/pdf/2309.05665.pdf)
 - PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots (RAL 2024) — [Original PDF](https://arxiv.org/pdf/2408.13740.pdf)
+- Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space (arXiv 2026) — [Original page](https://arxiv.org/abs/2608.19977)
 
 ### Loco-manipulation / Whole-body
 - Deep Whole-Body Control: Learning a Unified Policy for Manipulation and Locomotion (CoRL 2022) — [Original PDF](https://arxiv.org/pdf/2210.10044.pdf)
@@ -93,6 +100,9 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - Learning Humanoid Standing-up Control across Diverse Postures (RSS 2025) — [Original PDF](https://arxiv.org/pdf/2502.08378)
 - Learning Getting-Up Policies for Real-World Humanoid Robots (RSS 2025) — [Original PDF](https://arxiv.org/pdf/2502.12152)
 - BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion (2025) — [Original PDF](https://arxiv.org/pdf/2508.08241)
+- Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2606.00637)
+- Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control (arXiv 2026) — [Original page](https://arxiv.org/abs/2607.20110)
+- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.24840)
 
 ### Hardware
 - A Low Cost Modular Actuator for Dynamic Robots — [Original PDF](https://dspace.mit.edu/handle/1721.1/118671)
@@ -236,6 +246,36 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 
 #### BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion (2025)
 - Original PDF: https://arxiv.org/pdf/2508.08241- Notes: High-quality motion tracking plus guided diffusion; supports test-time task-specific control using simple cost functions (Berkeley/Stanford).
+
+#### Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain (arXiv 2026)
+- Original page: https://arxiv.org/abs/2608.16164- Notes: Generates trajectory-level curricula directly from unstructured terrain maps; an evaluator scores task difficulty and a sampler proposes tasks matched to policy capability.
+
+#### TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion (arXiv 2026)
+- Original page: https://arxiv.org/abs/2603.14156- Notes: A Transformer teacher jointly schedules velocity, terrain, and domain-randomization curricula, validated on Unitree Go1 for fast locomotion and sim-to-real transfer.
+
+#### Predictive Safety Curricula for Robust Legged Locomotion (arXiv 2026)
+- Original page: https://arxiv.org/abs/2609.37070- Notes: Uses a safety critic to predict future safety cost and prioritize rare failure cases; reduces shank collisions on platforms including ANYmal-D.
+
+#### Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots (arXiv 2026)
+- Original page: https://arxiv.org/abs/2609.39755- Notes: Continually learns terrain interaction and traversability from pre-contact vision and locomotion experience, using a validation gate for model updates.
+
+#### Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion (arXiv 2026)
+- Original page: https://arxiv.org/abs/2606.00637- Notes: GLAD separates global terrain context from local foothold detail and enables perceptive locomotion on sparse footholds and obstacle-rich terrain with Unitree G1.
+
+#### Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space (arXiv 2026)
+- Original page: https://arxiv.org/abs/2608.19977- Notes: Combines animal-motion imitation, visual gate detection, and hierarchical skill selection for dynamic quadruped traversal through constrained spaces.
+
+#### Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (arXiv 2026)
+- Original page: https://arxiv.org/abs/2601.17428- Notes: LP-ACRL estimates learning progress online and adapts task sampling, enabling high-speed ANYmal D locomotion across varied rough terrains.
+
+#### DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion (arXiv 2026)
+- Original page: https://arxiv.org/abs/2608.22033- Notes: Uses state-conditioned sampling and a fixed token set to reduce high-resolution terrain encoding cost, with sim-to-real validation for sparse-terrain quadruped locomotion.
+
+#### Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control (arXiv 2026)
+- Original page: https://arxiv.org/abs/2607.20110- Notes: Trains a general motion-tracking policy, then acquires highly dynamic humanoid skills such as backflips through difficulty-aware sampling and capability consolidation while limiting regression.
+
+#### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (arXiv 2026)
+- Original page: https://arxiv.org/abs/2609.24840- Notes: Directly generates executable actions while predicting future states for text conditioning and test-time guidance; validated on a Unitree G1 humanoid.
 
 <a id="surveys" name="surveys"></a>
 ### Surveys
