@@ -1,0 +1,40 @@
+name: Mirror to personal fork
+
+# Gitee 的「仓库镜像管理（Pull）」只支持个人仓库，不支持组织仓库。
+# 因此先把组织仓库同步到个人 fork，再由 Gitee 从 fork 拉取到 locowiki-content。
+#
+# 需要 Actions secrets: MIRROR_PUSH_TOKEN = GitHub PAT（repo 权限）
+# 可选 Actions variables: FORK_REPO，默认 Lain-Ego0/LocoWiki
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-fork
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to personal fork
+        env:
+          MIRROR_PUSH_TOKEN: ${{ secrets.MIRROR_PUSH_TOKEN }}
+          FORK_REPO: ${{ vars.FORK_REPO }}
+        run: |
+          set -euo pipefail
+          token="$(printf '%s' "${MIRROR_PUSH_TOKEN:-}" | tr -d '[:space:]')"
+          if [ -z "$token" ]; then
+            echo "::warning::MIRROR_PUSH_TOKEN is not configured, skip fork mirror"
+            exit 0
+          fi
+          echo "::add-mask::$token"
+          repo="${FORK_REPO:-Lain-Ego0/LocoWiki}"
+          git push --force "https://x-access-token:${token}@github.com/${repo}.git" HEAD:refs/heads/main
+          echo "Mirrored $(git rev-parse --short HEAD) to github.com/${repo}"
