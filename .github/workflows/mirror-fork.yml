@@ -36,5 +36,7 @@ jobs:
           fi
           echo "::add-mask::$token"
           repo="${FORK_REPO:-Lain-Ego0/LocoWiki}"
+          # actions/checkout 持久化了 github-actions[bot] 的认证头，会覆盖 URL 里的 PAT
+          git config --local --unset-all http.https://github.com/.extraheader || true
           git push --force "https://x-access-token:${token}@github.com/${repo}.git" HEAD:refs/heads/main
           echo "Mirrored $(git rev-parse --short HEAD) to github.com/${repo}"
