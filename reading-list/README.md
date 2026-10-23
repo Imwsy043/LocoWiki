@@ -52,7 +52,8 @@ python3 scripts/resolve_paper_links.py --update-index
 - Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain（arXiv 2026）— [原文页面](https://arxiv.org/abs/2608.16164)
 - TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2603.14156)
 - Predictive Safety Curricula for Robust Legged Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.37070)
-- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning（arXiv 2026）— [原文页面](https://arxiv.org/abs/2601.17428)
+- MoE-Loco: Mixture of Experts for Multitask Locomotion（2025）— [原文 PDF](https://arxiv.org/pdf/2503.08564.pdf)
+- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning（RAL 2026）— [原文 PDF](https://arxiv.org/pdf/2601.17428.pdf)
 
 #### 双足
 - Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition（ICRA 2021）— [原文 PDF](https://arxiv.org/pdf/2011.01387.pdf)
@@ -60,12 +61,14 @@ python3 scripts/resolve_paper_links.py --update-index
 ### Sim-to-Real / 适应
 - Sim-to-Real: Learning Agile Locomotion for Quadruped Robots（2018）— [原文 PDF](https://arxiv.org/pdf/1804.10332.pdf)
 - RMA: Rapid Motor Adaptation for Legged Robots（RSS 2021）— [原文 PDF](https://arxiv.org/pdf/2107.04034.pdf)
+- Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning（2026）— [原文 PDF](https://arxiv.org/pdf/2607.02205.pdf)
 
 ### 感知 / 建图
 - Learning robust perceptive locomotion for quadrupedal robots in the wild（Science Robotics 2022）— [原文 PDF](https://arxiv.org/pdf/2201.08117)
 - Elevation Mapping for Locomotion and Navigation using GPU（IROS 2022）— [原文 PDF](https://arxiv.org/pdf/2204.12876)
 - Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.39755)
 - DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2608.22033)
+- Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding（T-RO 2026）— [原文 PDF](https://arxiv.org/pdf/2601.08485.pdf)
 
 ### 运动先验 / 模仿学习 / 风格奖励 / 生成模型
 - Learning Agile Robotic Locomotion Skills by Imitating Animals（RSS 2020）— [原文 PDF](https://arxiv.org/pdf/2004.00784.pdf)
@@ -77,6 +80,7 @@ python3 scripts/resolve_paper_links.py --update-index
 - A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards（ICRA 2025）— [原文 PDF](https://arxiv.org/pdf/2409.15780.pdf)
 - Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild（RAL 2023）— [原文 PDF](https://arxiv.org/pdf/2304.10888.pdf)
 - Lifelike Agility and Play on Quadrupedal Robots using Reinforcement Learning and Generative Pre-trained Models（Nature Machine Intelligence 2023）— [原文 PDF](https://arxiv.org/pdf/2308.15143.pdf)
+- KiRAS: Keyframe Guided Self-Imitation for Robust and Adaptive Skill Learning in Quadruped Robots（ICRA 2026）— [原文 PDF](https://arxiv.org/pdf/2603.15179.pdf)
 
 ### 跑酷 / 离散地形 / 高动态
 - Learning Agile Locomotion on Risky Terrains（IROS 2024）— [原文 PDF](https://arxiv.org/pdf/2311.10484.pdf)
@@ -92,6 +96,7 @@ python3 scripts/resolve_paper_links.py --update-index
 - Curiosity-Driven Learning of Joint Locomotion and Manipulation Tasks（CoRL 2023）— [原文 PDF](https://proceedings.mlr.press/v229/schwarke23a/schwarke23a.pdf)（PMLR 开放获取）
 
 ### 人形（Whole-Body / Teleop / Getting-Up / 生成）
+- Perpetual Humanoid Control for Real-time Simulated Avatars（ICCV 2023）— [原文 PDF](https://arxiv.org/pdf/2305.06456.pdf)
 - Expressive Whole-Body Control for Humanoid Robots（RSS 2024）— [原文 PDF](https://arxiv.org/pdf/2402.16796.pdf)
 - ExBody2: Advanced Expressive Humanoid Whole-Body Control（2024）— [原文 PDF](https://arxiv.org/pdf/2412.13196.pdf)
 - Open-TeleVision: Teleoperation with Immersive Active Visual Feedback（CoRL 2024）— [原文 PDF](https://arxiv.org/pdf/2407.01512.pdf)
@@ -103,7 +108,7 @@ python3 scripts/resolve_paper_links.py --update-index
 - BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion（2025）— [原文 PDF](https://arxiv.org/pdf/2508.08241)
 - Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion（arXiv 2026）— [原文页面](https://arxiv.org/abs/2606.00637)
 - Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control（arXiv 2026）— [原文页面](https://arxiv.org/abs/2607.20110)
-- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（arXiv 2026）— [原文页面](https://arxiv.org/abs/2609.24840)
+- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（2026）— [原文 PDF](https://arxiv.org/pdf/2609.24840.pdf)
 
 ### 硬件 / 机构
 - A Low Cost Modular Actuator for Dynamic Robots — [原文 PDF](https://dspace.mit.edu/handle/1721.1/118671)
@@ -146,6 +151,14 @@ python3 scripts/resolve_paper_links.py --update-index
 
 #### DTC: Deep Tracking Control（Science Robotics 2024）
 - 原文 PDF： [原文链接](https://arxiv.org/pdf/2309.15462.pdf) - 笔记：结合 Model-based 与 Learning-based：上层 TO 根据环境与动力学实时优化机身轨迹与足端轨迹；底层 RL 严格跟踪优化轨迹，实现极端地形的精确运动（梅花桩、深沟、废墟等）。相较只做机身速度跟踪的方法，该分层框架更有利于落足点选择。
+
+#### Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding（T-RO 2026）
+- 原文 PDF： https://arxiv.org/pdf/2601.08485.pdf
+- 笔记：统一感知与控制的 RL 框架。注意力地图编码器从高程图中提取局部和全局特征，并关注稀疏落脚点等关键区域；配套学习式建图从深度观测估计带不确定性的局部高程图，再与里程计融合。方法在四足和双足机器人上验证了敏捷运动与跨地形泛化（前称 AME-2）。
+
+#### Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning（RAL 2026）
+- 原文 PDF： https://arxiv.org/pdf/2601.17428.pdf
+- 笔记：提出基于学习进度的 LP-ACRL，根据 episode reward 在线估计任务学习进度并动态调整采样分布，无需预先知道任务难度顺序。ANYmal D 的单一策略可在楼梯、坡面、碎石和低摩擦平地等处保持 2.5 m/s 线速度与 3.0 rad/s 角速度，并迁移到真实机器人。
 
 <a id="kaist" name="kaist"></a>
 ### KAIST（Raibo / Unitree 等）
@@ -210,6 +223,20 @@ python3 scripts/resolve_paper_links.py --update-index
 ##### PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots（RAL 2024）
 - 原文 PDF： [原文链接](https://arxiv.org/pdf/2408.13740.pdf) - 笔记：跑酷能力的增强版本：进一步提高动态能力，实现挑战环境高速运动并迁移到野外（ZJU）。
 
+##### MoE-Loco: Mixture of Experts for Multitask Locomotion（2025）
+- 原文 PDF： https://arxiv.org/pdf/2503.08564.pdf
+- 笔记：将混合专家引入足式运动多任务强化学习。单一策略支持栏杆、坑、楼梯、坡面等复杂地形与四足/双足步态切换；不同专家自然形成行为分工，从而缓解梯度冲突并改善训练效率与性能。
+
+##### KiRAS: Keyframe Guided Self-Imitation for Robust and Adaptive Skill Learning in Quadruped Robots（ICRA 2026）
+- 原文 PDF： https://arxiv.org/pdf/2603.15179.pdf
+- 笔记：用关键帧作为紧凑且通用的技能表示，通过关键帧引导自模仿在平地学习多种技能，再在复杂地形继续训练同一策略。技能熟练度初始化可缓解灾难性遗忘，在 Solo-8 与 Unitree Go1 上实现平滑技能切换和复杂地形适应。
+
+#### Sim-to-Real / 通用
+
+##### Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning（2026）
+- 原文 PDF： https://arxiv.org/pdf/2607.02205.pdf
+- 笔记：用二自由度前馈-反馈控制器塑造真实关节的闭环响应，使其匹配仿真中的理想二阶参考动力学。策略因此无需任务级微调和学习式执行器模型即可零样本迁移；论文在单关节、7-DOF 机械臂、轮腿机器人和人形机器人上进行了验证。
+
 #### 双足 / 通用
 
 ##### Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition（ICRA 2021）
@@ -220,6 +247,10 @@ python3 scripts/resolve_paper_links.py --update-index
 
 <a id="humanoids" name="humanoids"></a>
 ### 人形（Whole-Body Control / Teleop / Getting-Up 等）
+
+#### Perpetual Humanoid Control for Real-time Simulated Avatars（ICCV 2023）
+- 原文 PDF： https://arxiv.org/pdf/2305.06456.pdf
+- 笔记：提出渐进式乘法控制策略（PMCP），动态分配网络容量，从一万段量级的动作数据中学习。控制器无需外部稳定力，能处理姿态估计噪声和意外跌倒，并可持续、实时地模仿远距离参考动作用于模拟人物。
 
 #### Expressive Whole-Body Control for Humanoid Robots（RSS 2024）
 - 原文 PDF： [原文链接](https://arxiv.org/pdf/2402.16796.pdf) - 笔记：基于 motion sequence retargeting 学习人形运动序列（UCSD）。
@@ -277,6 +308,10 @@ python3 scripts/resolve_paper_links.py --update-index
 
 #### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（arXiv 2026）
 - 原文页面： [原文链接](https://arxiv.org/abs/2609.24840) - 笔记：动作扩散策略直接生成可执行动作，并预测未来状态轨迹以支持文本条件和测试时目标引导；在 Unitree G1 上完成实机验证。
+
+#### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control（2026）
+- 原文 PDF： https://arxiv.org/pdf/2609.24840.pdf
+- 笔记：联合预测可执行动作与内部未来状态轨迹，仅使用本体感知，将文本条件生成和测试时状态目标引导统一到单一闭环策略中，无需独立运动跟踪器或特权全身状态。在 Jetson Orin NX 上满足 20 ms 控制周期，并在 Unitree G1 上实现文本指令、摇杆控制、语义插值和扰动响应。
 
 <a id="surveys" name="surveys"></a>
 ### 综述

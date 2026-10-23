@@ -51,7 +51,8 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain (arXiv 2026) — [Original page](https://arxiv.org/abs/2608.16164)
 - TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2603.14156)
 - Predictive Safety Curricula for Robust Legged Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.37070)
-- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (arXiv 2026) — [Original page](https://arxiv.org/abs/2601.17428)
+- MoE-Loco: Mixture of Experts for Multitask Locomotion (2025) — [Original PDF](https://arxiv.org/pdf/2503.08564.pdf)
+- Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (RAL 2026) — [Original PDF](https://arxiv.org/pdf/2601.17428.pdf)
 
 #### Bipeds
 - Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition (ICRA 2021) — [Original PDF](https://arxiv.org/pdf/2011.01387.pdf)
@@ -59,12 +60,14 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 ### Sim-to-Real / Adaptation
 - Sim-to-Real: Learning Agile Locomotion for Quadruped Robots (2018) — [Original PDF](https://arxiv.org/pdf/1804.10332.pdf)
 - RMA: Rapid Motor Adaptation for Legged Robots (RSS 2021) — [Original PDF](https://arxiv.org/pdf/2107.04034.pdf)
+- Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning (2026) — [Original PDF](https://arxiv.org/pdf/2607.02205.pdf)
 
 ### Perception / Mapping
 - Learning robust perceptive locomotion for quadrupedal robots in the wild (Science Robotics 2022) — [Original PDF](https://arxiv.org/pdf/2201.08117)
 - Elevation Mapping for Locomotion and Navigation using GPU (IROS 2022) — [Original PDF](https://arxiv.org/pdf/2204.12876)
 - Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.39755)
 - DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2608.22033)
+- Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding (T-RO 2026) — [Original PDF](https://arxiv.org/pdf/2601.08485.pdf)
 
 ### Motion Priors / Imitation / Style / Foundation Models
 - Learning Agile Robotic Locomotion Skills by Imitating Animals (RSS 2020) — [Original PDF](https://arxiv.org/pdf/2004.00784.pdf)
@@ -76,6 +79,7 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards (ICRA 2025) — [Original PDF](https://arxiv.org/pdf/2409.15780.pdf)
 - Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild (RAL 2023) — [Original PDF](https://arxiv.org/pdf/2304.10888.pdf)
 - Lifelike Agility and Play on Quadrupedal Robots using Reinforcement Learning and Generative Pre-trained Models (Nature Machine Intelligence 2023) — [Original PDF](https://arxiv.org/pdf/2308.15143.pdf)
+- KiRAS: Keyframe Guided Self-Imitation for Robust and Adaptive Skill Learning in Quadruped Robots (ICRA 2026) — [Original PDF](https://arxiv.org/pdf/2603.15179.pdf)
 
 ### Parkour / Discrete Terrain / Highly Dynamic Skills
 - Learning Agile Locomotion on Risky Terrains (IROS 2024) — [Original PDF](https://arxiv.org/pdf/2311.10484.pdf)
@@ -91,6 +95,7 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - Curiosity-Driven Learning of Joint Locomotion and Manipulation Tasks (CoRL 2023) — [Original PDF](https://proceedings.mlr.press/v229/schwarke23a/schwarke23a.pdf) (open access via PMLR)
 
 ### Humanoids (Whole-body / Teleop / Getting-up / Generative)
+- Perpetual Humanoid Control for Real-time Simulated Avatars (ICCV 2023) — [Original PDF](https://arxiv.org/pdf/2305.06456.pdf)
 - Expressive Whole-Body Control for Humanoid Robots (RSS 2024) — [Original PDF](https://arxiv.org/pdf/2402.16796.pdf)
 - ExBody2: Advanced Expressive Humanoid Whole-Body Control (2024) — [Original PDF](https://arxiv.org/pdf/2412.13196.pdf)
 - Open-TeleVision: Teleoperation with Immersive Active Visual Feedback (CoRL 2024) — [Original PDF](https://arxiv.org/pdf/2407.01512.pdf)
@@ -102,7 +107,7 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 - BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion (2025) — [Original PDF](https://arxiv.org/pdf/2508.08241)
 - Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion (arXiv 2026) — [Original page](https://arxiv.org/abs/2606.00637)
 - Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control (arXiv 2026) — [Original page](https://arxiv.org/abs/2607.20110)
-- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (arXiv 2026) — [Original page](https://arxiv.org/abs/2609.24840)
+- PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (2026) — [Original PDF](https://arxiv.org/pdf/2609.24840.pdf)
 
 ### Hardware
 - A Low Cost Modular Actuator for Dynamic Robots — [Original PDF](https://dspace.mit.edu/handle/1721.1/118671)
@@ -145,6 +150,14 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 
 #### DTC: Deep Tracking Control (Science Robotics 2024)
 - Original PDF: [Original source](https://arxiv.org/pdf/2309.15462.pdf) - Notes: Combines model-based and learning-based methods. The upper-level trajectory optimization (TO) layer optimizes body and foot trajectories in real time; a lower-level RL policy tightly tracks those trajectories, enabling precise motion over extreme terrains (stepping stones, trenches, rubble/ruins, etc.). Compared to setups that only do base-velocity tracking, this hierarchical design better leverages legged robots’ ability to choose footholds.
+
+#### Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding (T-RO 2026)
+- Original PDF: https://arxiv.org/pdf/2601.08485.pdf
+- Notes: A unified perception-and-control RL framework. Its attention-based map encoder extracts local and global elevation-map features and focuses on important regions such as sparse footholds. A learned mapping pipeline converts depth observations into uncertainty-aware local elevation maps and fuses them with odometry. The method demonstrates agile locomotion and terrain generalization on quadrupedal and bipedal robots. It was formerly named AME-2 and is conditionally accepted by T-RO.
+
+#### Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning (RAL 2026)
+- Original PDF: https://arxiv.org/pdf/2601.17428.pdf
+- Notes: LP-ACRL estimates task learning progress online from episodic reward and dynamically adjusts the sampling distribution without requiring a predefined difficulty ordering. A single policy on ANYmal D maintains 2.5 m/s linear velocity and 3.0 rad/s angular velocity across stairs, slopes, gravel, and low-friction flat surfaces, and transfers to the real robot.
 
 <a id="kaist" name="kaist"></a>
 ### KAIST (Raibo / Unitree, etc.)
@@ -209,6 +222,20 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 ##### PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots (RAL 2024)
 - Original PDF: [Original source](https://arxiv.org/pdf/2408.13740.pdf) - Notes: A “plus” version that further improves dynamic parkour performance and transfers to outdoor settings (ZJU).
 
+##### MoE-Loco: Mixture of Experts for Multitask Locomotion (2025)
+- Original PDF: https://arxiv.org/pdf/2503.08564.pdf
+- Notes: Introduces a mixture-of-experts approach to multitask legged locomotion. A single policy supports complex terrains such as bars, pits, stairs, and slopes, along with quadrupedal/bipedal gait switching. Experts naturally specialize in different behaviors, reducing gradient conflicts and improving training efficiency and performance.
+
+##### KiRAS: Keyframe Guided Self-Imitation for Robust and Adaptive Skill Learning in Quadruped Robots (ICRA 2026)
+- Original PDF: https://arxiv.org/pdf/2603.15179.pdf
+- Notes: Uses keyframes as compact, general skill representations. Keyframe-guided self-imitation first acquires diverse skills on flat ground; the same policy is then trained on rough terrain. Proficiency-based skill initialization mitigates catastrophic forgetting, enabling smooth skill transitions and terrain adaptation on Solo-8 and Unitree Go1.
+
+#### Sim-to-Real / General
+
+##### Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning (2026)
+- Original PDF: https://arxiv.org/pdf/2607.02205.pdf
+- Notes: Uses a two-degree-of-freedom feedforward–feedback controller to shape each real joint’s closed-loop response toward the ideal second-order dynamics used in simulation. This provides a standardized actuator interface for zero-shot policy transfer without task-level fine-tuning or learned actuator models. The approach is validated on a single joint, a 7-DOF arm, a wheeled-legged robot, and a humanoid.
+
 #### Bipeds / General
 
 ##### Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition (ICRA 2021)
@@ -219,6 +246,10 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 
 <a id="humanoids" name="humanoids"></a>
 ### Humanoids (Whole-Body Control / Teleop / Getting-Up, etc.)
+
+#### Perpetual Humanoid Control for Real-time Simulated Avatars (ICCV 2023)
+- Original PDF: https://arxiv.org/pdf/2305.06456.pdf
+- Notes: Introduces the progressive multiplicative control policy (PMCP), which dynamically allocates network capacity across a motion database containing up to ten thousand clips. Without external stabilizing forces, the controller handles noisy pose estimates and unexpected falls, and can perpetually imitate distant reference motions for simulated avatars without resets.
 
 #### Expressive Whole-Body Control for Humanoid Robots (RSS 2024)
 - Original PDF: [Original source](https://arxiv.org/pdf/2402.16796.pdf) - Notes: Learns humanoid motion sequences via motion retargeting (UCSD).
@@ -276,6 +307,10 @@ Note: this is a quick index; for short notes/introductions, see “Notes by Lab/
 
 #### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (arXiv 2026)
 - Original page: [Original source](https://arxiv.org/abs/2609.24840) - Notes: Directly generates executable actions while predicting future states for text conditioning and test-time guidance; validated on a Unitree G1 humanoid.
+
+#### PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control (2026)
+- Original PDF: https://arxiv.org/pdf/2609.24840.pdf
+- Notes: Jointly predicts executable actions and an internal future-state trajectory using only proprioception, unifying text-conditioned generation and test-time state guidance in one closed-loop policy without a separate motion tracker or privileged body states. It meets a 20 ms control period on Jetson Orin NX and demonstrates text commands, joystick control, semantic interpolation, and disturbance response on Unitree G1.
 
 <a id="surveys" name="surveys"></a>
 ### Surveys
