@@ -90,6 +90,24 @@
     "url": "https://arxiv.org/pdf/2309.15462.pdf"
   },
   {
+    "group": "ETH-RSL",
+    "title": "Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
+    "venue": "T-RO",
+    "year": 2026,
+    "notes": "提出统一的感知-控制强化学习框架：注意力地图编码器同时提取局部与全局高程图特征，并关注稀疏落脚点等关键区域；配套学习式建图从深度观测估计带不确定性的局部高程图，再与里程计融合。方法在四足与双足机器人上验证了对未见地形的敏捷运动与泛化能力（前称 AME-2，T-RO 条件接收）。",
+    "query": "Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding T-RO 2026",
+    "url": "https://arxiv.org/pdf/2601.08485.pdf"
+  },
+  {
+    "group": "ETH-RSL",
+    "title": "Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning",
+    "venue": "RAL",
+    "year": 2026,
+    "notes": "提出基于学习进度的自动课程强化学习（LP-ACRL）：从 episode reward 在线估计任务学习进度并调整采样分布，无需预先知道任务难度顺序。训练出的 ANYmal D 单一策略可在楼梯、坡面、碎石和低摩擦平地等处保持 2.5 m/s 线速度与 3.0 rad/s 角速度，并迁移到真实机器人。",
+    "query": "Scaling Rough Terrain Locomotion with Automatic Curriculum Reinforcement Learning RAL 2026",
+    "url": "https://arxiv.org/pdf/2601.17428.pdf"
+  },
+  {
     "group": "KAIST",
     "title": "Concurrent Training of a Control Policy and a State Estimator for Dynamic and Robust Legged Locomotion",
     "venue": "RAL",
@@ -160,6 +178,15 @@
     "notes": "较早提出用概率周期函数定义足式步态（站立、行走、跳跃、跑步、单脚跳），在 Cassie 上测试；包含单步态策略与多步态切换策略，被后续工作参考。",
     "query": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition ICRA 2021",
     "url": "https://arxiv.org/pdf/2011.01387.pdf"
+  },
+  {
+    "group": "其他",
+    "title": "Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning",
+    "venue": null,
+    "year": 2026,
+    "notes": "提出 actuator reality shaping：不继续提高仿真器对真实执行器的拟合精度，而是用二自由度前馈-反馈控制器塑造真实关节的闭环响应，使其匹配仿真中理想的二阶参考动力学。由此提供标准化的执行器接口，使策略无需任务级微调或学习式执行器模型即可零样本迁移；在单关节、7-DOF 机械臂、轮腿机器人和人形机器人上验证。",
+    "query": "Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning 2026",
+    "url": "https://arxiv.org/pdf/2607.02205.pdf"
   },
   {
     "group": "其他",
@@ -279,6 +306,33 @@
     "url": "https://arxiv.org/pdf/2408.13740.pdf"
   },
   {
+    "group": "其他四足",
+    "title": "MoE-Loco: Mixture of Experts for Multitask Locomotion",
+    "venue": null,
+    "year": 2025,
+    "notes": "将混合专家（MoE）引入足式运动多任务强化学习：单一策略可跨越栏杆、坑、楼梯、坡面等复杂地形，并支持四足与双足步态切换。不同专家会自然形成行为分工，从而缓解多任务训练中的梯度冲突并改善训练效率与性能，已完成真机验证。",
+    "query": "MoE-Loco Mixture of Experts for Multitask Locomotion 2025",
+    "url": "https://arxiv.org/pdf/2503.08564.pdf"
+  },
+  {
+    "group": "其他四足",
+    "title": "KiRAS: Keyframe Guided Self-Imitation for Robust and Adaptive Skill Learning in Quadruped Robots",
+    "venue": "ICRA",
+    "year": 2026,
+    "notes": "以关键帧作为紧凑且通用的技能表示，通过关键帧引导自模仿在平地获得多种技能，再在复杂地形继续训练同一策略；基于技能熟练度的初始化方法可缓解灾难性遗忘。在 Solo-8 与 Unitree Go1 上展示了多技能获取、平滑切换和复杂地形适应。",
+    "query": "KiRAS Keyframe Guided Self-Imitation Robust Adaptive Skill Learning Quadruped Robots ICRA 2026",
+    "url": "https://arxiv.org/pdf/2603.15179.pdf"
+  },
+  {
+    "group": "人形",
+    "title": "Perpetual Humanoid Control for Real-time Simulated Avatars",
+    "venue": "ICCV",
+    "year": 2023,
+    "notes": "提出渐进式乘法控制策略（PMCP），动态分配网络容量，在无需外部稳定力的情况下从一万段量级的动作数据中学习。控制器能处理视频姿态估计噪声和意外跌倒，在无需重置的情况下持续、实时地模仿远距离参考动作。",
+    "query": "Perpetual Humanoid Control Real-time Simulated Avatars ICCV 2023",
+    "url": "https://arxiv.org/pdf/2305.06456.pdf"
+  },
+  {
     "group": "人形",
     "title": "Expressive Whole-Body Control for Humanoid Robots",
     "venue": "RSS",
@@ -358,6 +412,15 @@
     "notes": "高质量 motion tracking + guided diffusion：测试时可用简单 cost functions 做 task-specific control（Berkeley/Stanford）。",
     "query": "BeyondMimic From Motion Tracking to Versatile Humanoid Control via Guided Diffusion 2025",
     "url": "https://arxiv.org/pdf/2508.08241"
+  },
+  {
+    "group": "人形",
+    "title": "PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control",
+    "venue": null,
+    "year": 2026,
+    "notes": "提出联合预测动作与内部未来状态轨迹的扩散策略，仅使用本体感知，并将文本条件生成与测试时状态目标引导统一到单一闭环控制策略中。无需独立的运动跟踪器或特权全身状态；在 Jetson Orin NX 上满足 20 ms 控制周期，并在 Unitree G1 上实现文本指令、摇杆控制、语义插值和扰动响应。",
+    "query": "PredActor Predictive Action Diffusion Steerable Onboard Humanoid Control 2026",
+    "url": "https://arxiv.org/pdf/2609.24840.pdf"
   },
   {
     "group": "ETH-RSL",
