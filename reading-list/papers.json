@@ -448,5 +448,77 @@
     "notes": "",
     "query": "A Low Cost Modular Actuator for Dynamic Robots Katz MIT",
     "url": "https://dspace.mit.edu/handle/1721.1/118671"
+  },
+  {
+    "group": "其他四足",
+    "title": "Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出轨迹级自动课程学习：评估器学习当前策略对非结构化地形轨迹任务的难度，采样器据此生成下一轮训练任务，避免依赖预先排序的参数化地形；论文参考并延伸 LP-ACRL 的学习进展课程思想，在困难地形上提升通过率。",
+    "query": "Trajectory-Level Automatic Curriculum Learning for Legged Locomotion on Unstructured Terrain 2608.16164",
+    "url": "https://arxiv.org/abs/2608.16164"
+  },
+  {
+    "group": "其他四足",
+    "title": "TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "用 Transformer 教师联合调度速度指令、地形难度和域随机化参数三维课程，并根据训练历史预测学习进展；在 Unitree Go1 仿真和实机上验证高速运动与较小的 sim-to-real 性能损失。",
+    "query": "TransCurriculum Multi-Dimensional Curriculum Learning for Fast Stable Locomotion 2603.14156",
+    "url": "https://arxiv.org/abs/2603.14156"
+  },
+  {
+    "group": "其他四足",
+    "title": "Predictive Safety Curricula for Robust Legged Locomotion",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出预测式安全课程：利用分布式安全 critic 预测未来安全代价，优先分配容易触发罕见失败的地形和随机事件；在 ANYmal-D 等平台上降低小腿碰撞并提升复杂地形可靠性。",
+    "query": "Predictive Safety Curricula for Robust Legged Locomotion 2609.37070",
+    "url": "https://arxiv.org/abs/2609.37070"
+  },
+  {
+    "group": "人形",
+    "title": "Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出 GLAD 地形编码器，用全局注意力概括环境上下文，用局部注意力提取与落足点相关的细节；在 Unitree G1 上实现面向稀疏落足点、窄路和障碍物的感知运动 sim-to-real。",
+    "query": "Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion 2606.00637",
+    "url": "https://arxiv.org/abs/2606.00637"
+  },
+  {
+    "group": "其他四足",
+    "title": "Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出分层强化学习流程：低层模仿真实动物动作形成多种技能，高层根据视觉识别的狭窄通道和技能能力选择无碰撞轨迹，实现四足机器人动态穿越空中门，并扩展到其他高动态任务。",
+    "query": "Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space 2608.19977",
+    "url": "https://arxiv.org/abs/2608.19977"
+  },
+  {
+    "group": "其他四足",
+    "title": "Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "利用接触前视觉特征和持续积累的运动经验预测足端滑移、法向力、牵引力、能耗等交互指标，并通过带验证门的经验回放持续更新可通行性地图；在 Unitree Go2 仿真和实机上评估。",
+    "query": "Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots 2609.39755",
+    "url": "https://arxiv.org/abs/2609.39755"
+  },
+  {
+    "group": "其他四足",
+    "title": "DELTA: Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出可变形高程局部地形注意编码器，通过状态条件采样位置和固定数量的地形证据标记降低高分辨率地图编码成本，并在稀疏地形四足运动中验证泛化和 sim-to-real。",
+    "query": "DELTA Deformable Elevation-Based Local Terrain Attention Encoder for Sparse-Terrain Quadrupedal Locomotion 2608.22033",
+    "url": "https://arxiv.org/abs/2608.22033"
+  },
+  {
+    "group": "人形",
+    "title": "Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control",
+    "venue": "arXiv",
+    "year": 2026,
+    "notes": "提出面向通用人形控制的持续学习框架：先训练多源动作的通用运动跟踪策略，再通过难度感知采样和能力巩固学习高动态技能，同时限制已掌握能力的退化；支持后空翻等动作。",
+    "query": "Extreme-RGMT Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control 2607.20110",
+    "url": "https://arxiv.org/abs/2607.20110"
   }
 ]
