@@ -6,5 +6,5 @@ This folder collects technical reviews, solution sharing slides, and exchange ma
 
 - [2023 Dalian Polytechnic University Equestrian Competition Technical Sharing](<2023大连工业大学马术分享.pptx>)
 - [2026 Annual Meeting Fujian University of Technology: From Competition to Embodiment? A Discussion on Legged Robots](<2026年会 福建理工 从赛事到“具身”？足式机器人杂谈.pptx>)
-
+- [RCS Freshman Thinking Training · Words from Veteran RCers to Fellow RCers](https://wolumonde.feishu.cn/wiki/Uk7vwi1pxiR7HWkdN43cCkoYnab)
 Back to overview: [README.en.md](../README.en.md)
