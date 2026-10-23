@@ -29,6 +29,9 @@
 ## 🎯 赛题功能性开源
 
 - 合肥工业大学：2026 赛季赛事场地三维模型 [26RC_Field](https://github.com/Ruixi-Cheng/26RC_Field)
+- 南华大学：2027 四足赛道任务赛/障碍赛 MuJoCo 场地模型（XML） [27rc-dog-race](https://github.com/uwvwko-zzz/27rc-dog-race)
+- 南华大学：2027 主赛道 MuJoCo / Gazebo 场地模型  [gazebo_models](https://github.com/jimi4-lei/gazebo_models)
+
 
 ## 📚 学习知识库
 
@@ -36,6 +39,8 @@
 - 达妙科技足式机器人控制基础：[足式机器人控制](https://my.feishu.cn/wiki/D88NwctmXieODakf3f1cPWCinfe)
 - 达妙科技足式强化学习笔记：[足式深度强化学习笔记](https://my.feishu.cn/wiki/Sn4iwqtREio1llkzJ6Vc9wIwnmf)
 - 大连交通大学强化学习快速入门：[深入浅出强化学习](https://za8k8pe2ezm.feishu.cn/wiki/N5hFwIrC3isrVckQRRPcx6cHnPs?from=from_parent_docx)
+- 广州美术学院Artlnnov战队算法组教程：[Alg_Team_Tutorial](https://github.com/HGZQ1/Alg_Team_Tutorial.git)
+
 
 ## 独立项目文章
 
@@ -80,7 +85,7 @@
 | [工程机器人整车研发与七轴双臂控制](projects-and-competition/humanoid-seven-axis-arm-control.md) | [专题入口](https://bbs.robomaster.com/article/1942648?source=1) | 覆盖机械设计、自定义控制器、七轴双臂控制、工程视觉和 RM2026 整车技术报告 |
 | [RC_WheelLeg](projects-and-competition/rc-wheelleg.md) | [GitHub](https://github.com/zeitvex/RC_WheelLeg) | HYNova 战队的轮足机器人、ROS 2 和强化学习项目 |
 | [福州大学浮舟湿地点足 12DOF](projects-and-competition/fuzhou-quadruped-robot-lab.md) | [GitHub](https://github.com/Taojunfeng123/quadruped_robot_lab) | 点足 12DOF 四足机器人的 RL 训练代码 |
-| [南华大学衡山Π串联四足](projects-and-competition/nhu-himloco-quadruped.md) | [GitHub](https://github.com/uwvwko-zzz/uw-himloco) | HIMLOCO 训练框架与 himdog 部署代码 |
+| [南华大学衡山Π串联四足](projects-and-competition/nhu-himloco-quadruped.md) | [GitHub](https://github.com/uwvwko-zzz/uw-himloco) | HIMLOCO 训练框架与 himdog 部署代码，目前该训练框架包含点足的通用地形，倾倒恢复，高台和轮足的通用地形 |
 | [HIMLoco for Go2W](projects-and-competition/himloco-go2w.md) | [GitHub](https://github.com/TrackinBIT/HIMLoco-for-Go2W) | 基于 HIMLoco 的 Go2W Isaac Gym 训练和 MuJoCo 验证 |
 | [RoboGauge Go2 冠军方案](projects-and-competition/robogauge-go2-champion.md) | [Project Page](https://robogauge.github.io/complete/) | Go2 高鲁棒运动控制、自动评测和多策略部署方案 |
 | [Unitree Qmini 与 RoboTamer](projects-and-competition/qmini-robotamer.md) | [Qmini](https://github.com/unitreerobotics/Qmini) | 宇树与山东大学联合开源的可 3D 打印低成本双足机器人及软件栈 |

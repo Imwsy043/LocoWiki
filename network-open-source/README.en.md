@@ -29,6 +29,8 @@ This page is the open-source resource index. Complete competition solutions, cor
 ## 🎯 Competition Resources
 
 - Hefei University of Technology: 2026 season competition-field 3D model [26RC_Field](https://github.com/Ruixi-Cheng/26RC_Field)
+- University of South China: MuJoCo field models (XML) for the 2027 quadruped task and obstacle races [27rc-dog-race](https://github.com/uwvwko-zzz/27rc-dog-race)
+- University of South China: MuJoCo / Gazebo field models for the 2027 main track [gazebo_models](https://github.com/jimi4-lei/gazebo_models)
 
 ## 📚 Learning Knowledge Bases
 
@@ -36,6 +38,7 @@ This page is the open-source resource index. Complete competition solutions, cor
 - Damiao Technology fundamentals of legged robot control: [Legged Robot Control](https://my.feishu.cn/wiki/D88NwctmXieODakf3f1cPWCinfe)
 - Damiao Technology deep-RL notes for legged robots: [In-depth Reinforcement Learning Notes](https://my.feishu.cn/wiki/Sn4iwqtREio1llkzJ6Vc9wIwnmf)
 - Dalian Jiaotong University reinforcement-learning primer: [A Deep Dive into Reinforcement Learning](https://za8k8pe2ezm.feishu.cn/wiki/N5hFwIrC3isrVckQRRPcx6cHnPs?from=from_parent_docx)
+- Guangzhou Academy of Fine Arts Artlnnov team algorithm group tutorials: [Alg_Team_Tutorial](https://github.com/HGZQ1/Alg_Team_Tutorial.git)
 
 ## Project Articles
 
@@ -71,7 +74,7 @@ The project articles are grouped by their primary purpose.
 | [Engineering Robot and Seven-Axis Dual-Arm Development](projects-and-competition/humanoid-seven-axis-arm-control.md) | [专题入口](https://bbs.robomaster.com/article/1942648?source=1) | Mechanical design, custom controllers, seven-axis control, engineering vision, and the RM2026 vehicle report |
 | [RC_WheelLeg](projects-and-competition/rc-wheelleg.md) | [GitHub](https://github.com/zeitvex/RC_WheelLeg) | HYNova wheel-legged robot project with ROS 2 and reinforcement learning |
 | [Fuzhou University 12-DOF Quadruped](projects-and-competition/fuzhou-quadruped-robot-lab.md) | [GitHub](https://github.com/Taojunfeng123/quadruped_robot_lab) | RL training code for a 12-DOF point-foot quadruped |
-| [Nanhua University HIMLOCO Quadruped](projects-and-competition/nhu-himloco-quadruped.md) | [GitHub](https://github.com/uwvwko-zzz/uw-himloco) | HIMLOCO training framework and himdog deployment code |
+| [Nanhua University HIMLOCO Quadruped](projects-and-competition/nhu-himloco-quadruped.md) | [GitHub](https://github.com/uwvwko-zzz/uw-himloco) | HIMLOCO training framework and himdog deployment code, with training support for general terrain traversal, fall recovery, and high platforms for point-foot quadrupeds, plus general terrain traversal for wheeled quadrupeds |
 | [HIMLoco for Go2W](projects-and-competition/himloco-go2w.md) | [GitHub](https://github.com/TrackinBIT/HIMLoco-for-Go2W) | Go2W Isaac Gym training and MuJoCo verification based on HIMLoco |
 | [RoboGauge Go2 Champion Solution](projects-and-competition/robogauge-go2-champion.md) | [Project Page](https://robogauge.github.io/complete/) | Robust locomotion, automated evaluation, and multi-policy deployment for Go2 |
 
