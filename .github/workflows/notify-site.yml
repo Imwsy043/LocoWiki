@@ -3,7 +3,19 @@ name: Notify LocoWiki Website
 on:
   push:
     branches: [main]
+    # 只有网站会展示的内容目录变化才通知；README、assets、.github 等不进入站点索引的改动不触发
+    paths:
+      - "wiki/**"
+      - "competition-rules/**"
+      - "technical-sharing/**"
+      - "scripts/**"
+      - "reading-list/**"
+      - "network-open-source/**"
   workflow_dispatch:
+
+concurrency:
+  group: notify-site
+  cancel-in-progress: true
 
 jobs:
   notify-site:
@@ -12,6 +24,7 @@ jobs:
       - name: Dispatch website index refresh
         env:
           DISPATCH_TOKEN: ${{ secrets.LOCO_WIKI_SITE_DISPATCH_TOKEN }}
+          SOURCE_SHA: ${{ github.sha }}
         run: |
           if [ -z "$DISPATCH_TOKEN" ]; then
             echo "LOCO_WIKI_SITE_DISPATCH_TOKEN is not configured" >&2
@@ -23,4 +36,4 @@ jobs:
             -H "Authorization: Bearer $DISPATCH_TOKEN" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/LocoWiki/LocoWiki.github.io/dispatches \
-            -d '{"event_type":"wiki-updated","client_payload":{"source_sha":"${{ github.sha }}"}}'
+            -d "{\"event_type\":\"wiki-updated\",\"client_payload\":{\"source_sha\":\"$SOURCE_SHA\"}}"
